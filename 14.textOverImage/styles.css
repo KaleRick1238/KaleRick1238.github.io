@@ -1,0 +1,36 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Permanent Marker', sans-serif; /* Handwritten-style font */
+}
+
+.full-page-image {
+    background-image: url('images/lyric01.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-overlay {
+    background-color: rgba(0, 128, 0, 0.9); /* Solid green with slight transparency */
+    color: darkred; /* Dark red text color */
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 2.5rem; /* Handwritten-style font size */
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    letter-spacing: 5px; /* Increased letter spacing */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
